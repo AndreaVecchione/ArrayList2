@@ -1,9 +1,7 @@
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
@@ -19,7 +17,7 @@ public class Main {
         Student student10 = new Student("Riccardo", 23);
         Student student11 = new Student("Ilaria", 17);
         Student student12 = new Student("Gianpaolo", 27);
-
+// creo un arraylist con i nomi degli studenti
         List<Student> list = new ArrayList<>();
         list.add(student1);
         list.add(student2);
@@ -33,9 +31,9 @@ public class Main {
         list.add(student10);
         list.add(student11);
         list.add(student12);
-
+//lista stampata senza aveerla ordinata
         System.out.println("List is: " + list);
-
+//vado a modificare l'ordine dei nomi sull'arraylist per alfabetico
         list.sort(Comparator.comparing(Student::getName));
         System.out.println("list in alphabetic order: " + list);
 
@@ -44,4 +42,3 @@ public class Main {
 
         }
     }
-
